@@ -13,9 +13,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style1.css">
     <title>AR's 課表</title>
 </head>
     <body bgcolor="#ffe4c4">
+    <div id="wrap">
         <h1 align="center">hello world</h1>
         <p align="center"><del><span style="font-size: 60px;color:blue">A</span><span style="font-size: 80px;color: red">s</span><span style="font-size: 92px;color: yellow">i</span><span style="font-size: 72px">a</span><span style="font-size: 80px;color:blue">U</span><span style="font-size: 100px">n</span><span style="font-size: 120px;color:blue">i</span><span style="font-size: 160px">v</span></del></p>
         <table  width="300" align="center">
@@ -26,6 +28,7 @@
                 <td><a href="page3.html">常用鏈結</a></td>
             </tr>
         </table>
+    </div>
         <table border="1" width="600" align="center">
             <tr height="40">
                 <th width="16%"></th>

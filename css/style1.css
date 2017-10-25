@@ -1,0 +1,19 @@
+*
+#wrap{
+    margin: 0 auto auto auto;
+    background-color: darkorange;
+    width: 70%;
+    margin:0 auto auto auto;
+    padding-top: 3em;
+    -webkit-border-radius: 8px;
+    background-image:linear-gradient(rgba(100,0,250,0.3),rgba(100,0,250,0.8));
+}
+#footer {
+    font-size: 3em;
+    color: aqua;
+    margin:0 auto auto auto ;
+    text-shadow:2px 2px 5px brown;
+    background-color: aquamarine;
+    width: 70%;
+
+}
