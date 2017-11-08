@@ -20,10 +20,10 @@
     <div id="wrap">
         <h1 align="center">hello world</h1>
         <p align="center"><del><span style="font-size: 60px;color:blue">A</span><span style="font-size: 80px;color: red">s</span><span style="font-size: 92px;color: yellow">i</span><span style="font-size: 72px">a</span><span style="font-size: 80px;color:blue">U</span><span style="font-size: 100px">n</span><span style="font-size: 120px;color:blue">i</span><span style="font-size: 160px">v</span></del></p>
-        <table  width="300" align="center">
-            <tr >
+        <table  width="300" align="center" >
+            <tr>
                 <td><a href="index.html">首頁</a></td>
-                <td><a href="page1.html">hobby</a></td>
+                <td><a href="index2.php">hobby</a></td>
                 <td><a href="課表.php">課表</a></td>
                 <td><a href="page3.html">常用鏈結</a></td>
             </tr>

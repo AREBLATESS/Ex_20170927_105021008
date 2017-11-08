@@ -75,13 +75,26 @@
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
             </p>
             <div class="jumbotron">
-                <h1>Hello, world!</h1>
-                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+                <h1>陳良弼 (Arbee L.P. Chen)</h1>
+                <h2 style="color:gray">講座教授</h2>
+                <div align="center">
+                <img src="image/lbchen.jpg" alt="">
+                <tr>
+                <p>
+                    學歷： 美國南加州大學資訊工程博士<br/>
+                    辦公室： L509<br/>
+                    分機： 1075<br/>
+                    E-mail： arbee@asia.edu.tw<br/>
+                </p>
+                </tr>
+                </div>
             </div>
+
+
             <div class="row">
                 <div class="col-6 col-lg-4">
                     <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p> </p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-6 col-lg-4">
