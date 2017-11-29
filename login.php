@@ -28,7 +28,8 @@ if(!@$link = mysqli_connect($db_server,$db_user,$db_password,$db_name))
 //資料庫連線採UTF8
 //mysqli_query("SET NAMES UTF8");
 
-$pw=$_POST['password'];$id=$_POST['account'];
+$id=$_POST['account'];
+$pw=sha1($_POST ['password']);
 
 //搜尋資料庫資料
 $sql="SELECT * FROM `user` where account ='$id'";
