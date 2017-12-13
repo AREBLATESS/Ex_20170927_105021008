@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="e80dcd50-46e3-4512-9dc6-d96194bbcd24" name="html class" url="http://120.108.117.245/~105021008">
+      <webServer id="ae68ac72-54ca-4f63-87f0-0ac961a8e4e2" name="201712月網頁期末專題周老師" url="http://120.108.117.245/~105021008">
         <fileTransfer host="120.108.117.245" port="22" rootFolder="/home/105021008/public_html" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />

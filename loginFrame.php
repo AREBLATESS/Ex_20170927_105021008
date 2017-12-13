@@ -1,5 +1,12 @@
-
-    <!doctype html>
+<?php  session_start();
+/**
+ * Created by PhpStorm.
+ * User: USER
+ * Date: 2017/11/22
+ * Time: 上午 10:48
+ */
+?>
+<!doctype html>
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -114,11 +121,3 @@
 
 </body>
 </html>
-<?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 2017/11/22
- * Time: 上午 10:48
- */
-?>

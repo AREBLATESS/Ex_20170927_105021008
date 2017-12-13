@@ -7,11 +7,6 @@
  * Time: 上午 10:49
  */
 //連接資料庫
-
-//資料庫設定
-//資料庫位置
-//連接資料庫
-
 //資料庫設定
 //資料庫位置
 $db_server="localhost";
@@ -37,12 +32,12 @@ $row=@mysqli_fetch_row($result);
 
 //判斷帳號與密碼是否為空白
 //以及MySQL資料庫裡是否有這個會員
-if($id !=null && $pw !=null && $row[1] == $id && $row[2]==$pw) {
+if($id !=null && $pw !=null && $row[1] == $id && $row[3]==$pw) {
     $_SESSION["username"] = $id;
     $_SESSION["userType"]=$row[6];
     echo $_SESSION["username"];
     echo '登入成功';
-    echo ' <meta http-equiv="refresh" content="2;url=index.php">';
+    echo ' <meta http-equiv="refresh" content="2;url=index2.php">';
 //    echo $row[1];
 //    echo $row[2];
 

@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 /**
  * Created by PhpStorm.
  * User: USER
@@ -58,13 +58,34 @@
                 </div>
             </li>
         </ul>
+<!--        left end-->
+        <?php
+        if (isset($_SESSION["username"])&&$_SESSION['userType']=="1") {
+        ?>
+            <form class="form-inline my-2 my-lg-0">
+                <li><a href="admin.php"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;主控台</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </form>
+            <?php
+        }else if(isset($_SESSION["username"])){
+            ?>
+        <form class="form-inline my-2 my-lg-0">
+                <li><a href="logout.php">Logout</a></li>
+        </form>
+            <?php
+        }else{
+        ?>
         <form class="form-inline my-2 my-lg-0">
             <a class="nav-link" href="loginFrame.php">login</a>
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+            <?php
+        }
+        ?>
     </div>
 </nav>
+
 
 <div class="container">
 
