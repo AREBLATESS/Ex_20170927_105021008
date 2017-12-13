@@ -1,5 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: USER
@@ -30,7 +31,11 @@ $pw=sha1($_POST ['password']);
 $sql="SELECT * FROM `user` where account ='$id'";
 $result=mysqli_query($link,$sql);
 $row=@mysqli_fetch_row($result);
-
+echo $sql;
+    echo $row[1]."<br>";
+    echo $row[3]."<br>";
+    echo $id."<br>";
+    echo $pw."<br>";
 //判斷帳號與密碼是否為空白
 //以及MySQL資料庫裡是否有這個會員
 if($id !=null && $pw !=null && $row[1] == $id && $row[3]==$pw) {
