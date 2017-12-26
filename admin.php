@@ -1,10 +1,12 @@
-<?php session_start()
+<?php session_start();
 /**
  * Created by PhpStorm.
  * User: user
  * Date: 2017/12/13
  * Time: 上午 08:01
- */?>
+ */
+include ('fun.inc.nav.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,59 +68,8 @@ if(isset($_SESSION['username'])){
 <!--    <div style="margin:50px auto auto auto" align="center" >-->
         <div id="content" align="center">
 <!--            navbar-->
-            <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">Navbar</a>
+                        <?php nav(1) ?>
 
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--        left end-->
-                    <?php
-                    if (isset($_SESSION["username"])&&$_SESSION['userType']=="1") {
-                        ?>
-                        <form class="form-inline my-2 my-lg-0">
-                            <li><a href="admin.php"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;主控台</a></li>
-                            <li><a href="logout.php">Logout</a></li>
-                        </form>
-                        <?php
-                    }else if(isset($_SESSION["username"])){
-                        ?>
-                        <form class="form-inline my-2 my-lg-0">
-                            <li><a href="logout.php">Logout</a></li>
-                        </form>
-                        <?php
-                    }else{
-                        ?>
-                        <form class="form-inline my-2 my-lg-0">
-                            <a class="nav-link" href="loginFrame.php">login</a>
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                        <?php
-                    }
-                    ?>
-                </div>
-            </nav>
 
             <h1 >paper清單(<?php echo $count;?>)</h1>
             <div class="table-responsive" align="center">

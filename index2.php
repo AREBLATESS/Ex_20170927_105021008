@@ -32,8 +32,66 @@ include ('fun.inc.nav.php');
 </head>
 
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
+<<<<<<< HEAD
 <?php nav(1) ?>
 
+=======
+
+<nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <?php nav(1) ?>
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Link</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link disabled" href="#">Disabled</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item dropdown">-->
+<!--                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+<!--                <div class="dropdown-menu" aria-labelledby="dropdown01">-->
+<!--                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                </div>-->
+<!--            </li>-->
+        </ul>
+<!--        left end-->
+        <?php
+        if (isset($_SESSION["username"])&&$_SESSION['userType']=="1") {
+        ?>
+            <form class="form-inline my-2 my-lg-0">
+                <li><a href="admin.php"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;主控台</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </form>
+            <?php
+        }else if(isset($_SESSION["username"])){
+            ?>
+        <form class="form-inline my-2 my-lg-0">
+                <li><a href="logout.php">Logout</a></li>
+        </form>
+            <?php
+        }else{
+        ?>
+        <form class="form-inline my-2 my-lg-0">
+            <a class="nav-link" href="loginFrame.php">login</a>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+            <?php
+        }
+        ?>
+    </div>
+</nav>
+>>>>>>> b3de706386923bee6a7b77bcc277fc627c58a3da
 
 
 <div class="container">
@@ -44,7 +102,12 @@ include ('fun.inc.nav.php');
             <p class="float-right hidden-md-up">
                 <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
             </p>
+<<<<<<< HEAD
             <div style="font-weight: bold;margin: 100px auto 50px auto">
+=======
+<!--            <div class="jumbotron">-->
+            <div style="font-weight:bold;margin: 100px auto 50px auto">
+>>>>>>> b3de706386923bee6a7b77bcc277fc627c58a3da
                 <h1>陳良弼 (Arbee L.P. Chen)</h1>
                 <h2 style="color:gray">講座教授</h2>
                 <div align="center">
@@ -65,6 +128,7 @@ include ('fun.inc.nav.php');
                 <div class="col-6 col-lg-4">
                     <h2>認識 Arbee教授</h2>
                     <p> </p>
+<<<<<<< HEAD
                     <p><a class="btn btn-secondary" href="index2.php" role="button">View details &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-6 col-lg-4">
@@ -76,6 +140,19 @@ include ('fun.inc.nav.php');
                     <h2>Arbee授課</h2>
                     <p> </p>
                     <p><a class="btn btn-secondary" href="courseInformation.php" role="button">View details &raquo;</a></p>
+=======
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!--/span-->
+                <div class="col-6 col-lg-4">
+                    <h2>Arbee專區</h2>
+                    <p></p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div><!--/span-->
+                <div class="col-6 col-lg-4">
+                    <h2>Arbee授課</h2>
+                    <p></p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+>>>>>>> b3de706386923bee6a7b77bcc277fc627c58a3da
                 </div><!--/span-->
 
             </div><!--/row-->
