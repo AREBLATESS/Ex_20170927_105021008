@@ -15,5 +15,31 @@
     text-shadow:2px 2px 5px brown;
     background-color: aquamarine;
     width: 70%;
-
+}
+.paper1{
+    font-size:2em;
+    text-align: center;
+    border-style:solid;
+    border-color: brown;
+    background-color: coral;
+    margin: 20px 200px auto 200px;
+}
+.paper2{
+    font-size:2em;
+    text-align: center;
+    border-style:solid;
+    border-color: #5eb5ff;
+    background-color: #ffa148;
+    margin: 20px 200px auto 200px;
+}
+.footer{
+    background-color: chartreuse;
+    width:100%;
+    text-align:center;
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 150px 200px auto 200px;
 }
