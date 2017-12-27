@@ -30,78 +30,77 @@ include('fun.inc.nav.php');
 </head>
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 <?php nav(1) ?>
-    <div align="center">
+    <div align="center"  style="margin: 100px 200px auto 200px">
         <h class="title">
             獲獎 的 Arbee Chen
         </h>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     Best Dissertation Supervision Award，Taiwan Institute of Electrical and Electronic Engineering，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     Distinguished Research Fellow Award，National Science Council，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     Master Thesis Supervision Award，The Chinese Institute of Electrical，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     Distinguished Research Award (three times)，National Science Council，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     Who’s Who in the Republic of China，Government Information Office，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     Best Dissertation Supervision Award (three times)，Institute of Information & Computing Machinery，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     Research Fellow Award (two times)，National Science Council，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     Best Dissertation Supervision Award，Acer，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     Distinguished Engineering Professor Award，The Chinese Institute of Engineers，..
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     Master Thesis Supervision Award，Institute of Information & Computing，..
-
                 </pr>
             </h>
         </div>

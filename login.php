@@ -41,6 +41,7 @@ echo $sql;
 if($id !=null && $pw !=null && $row[1] == $id && $row[3]==$pw) {
     $_SESSION["username"] = $id;
     $_SESSION["userType"]=$row[6];
+    require_once ('sendmail.php');
     echo $_SESSION["username"];
     echo '登入成功';
     echo ' <meta http-equiv="refresh" content="2;url=index2.php">';

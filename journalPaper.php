@@ -30,12 +30,12 @@ include('fun.inc.nav.php');
 </head>
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 <?php nav(1) ?>
-    <div align = "center" >
+    <div align = "center"  style="margin: 100px 200px auto 200px" >
         <h class="title">
             Arbee 的 期刊論文
         </h>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                 MapReduce Skyline Query Processing with Partitioning and Distributed Dominance Tests ，INFORMATION SCIENCES ,
                 J.L. Koh(J.L. Koh)，C.C. Chen(C.C. Chen)，C.Y. Chan(C.Y. Chan)，陳良弼(Arbee L.P. Chen)
@@ -43,8 +43,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                 A Framework for Enabling User Preference Profiling through Wi-Fi Logs ，IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING ,SCI
                 范耀中(Yao-Chung Fan)，陳毓琪(Yu-Chi Chen)，童冠傑(Kuan-Chieh Tung)，陳良弼(Arbee L.P. Chen)
@@ -52,8 +52,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                 Voting Intention and Choices: Are Voters Always Rational and Deliberative? ，PLoS One. ,SCI
                 李怡青(I-Ching Lee)，陳伊慈(Eva E. Chen)，蔡佳泓(Chia-Hung Tsai)，顏乃欣(Nai-Shing Yen)，陳良弼(Arbee L.P. Chen)，林偉杰(Wei-Chieh Lin)
@@ -61,8 +61,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                 Finding k Most Favorite Products based on Reverse Top-t Queries ，VLDB JOURNAL ,
                 柯佳伶(Jia-Ling Koh)，林真伊(Chen-Yi Lin)，陳良弼(Arbee L. P. Chen)
@@ -70,8 +70,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                 Top-n query processing in spatial databases considering bi-chromatic reverse k-nearest neighbors ，INFORMATION SYSTEMS JOURNAL ,SSCI
                 李嘉倫(Cha-Lun Li)，王恩慈(En Tzu Wang)，黃國柱(Guo-Jhu Huang)，陳良弼(Arbee L.P. Chen)
@@ -79,8 +79,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                 Determining k-Most Demanding Products with Maximum Expected Number of Total Customers ，IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING ,SCI
                 林真伊(Chen-Yi Lin)，柯佳伶(Jia-Ling Koh)，陳良弼(Arbee L.P. Chen)
@@ -88,8 +88,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                 Energy Efficient Schemes for Accuracy-Guaranteed Sensor Data Aggregation Using Scalable Counting ，IEEE Transactions on Knowledge and Data Engineering ,EI
                 范耀中(Yao-Chung Fan)，陳良弼(A.L.P. Chen)
@@ -97,8 +97,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                 On-line rule matching for event prediction ，VLDB JOURNAL ,SCI
                 左聰文(Chung-Wen Cho)，吳宜鴻(Yi-Hung Wu)，顏秀珍(Show-Jane Yen)，Ying Zheng(Ying Zheng)，陳良弼(Arbee L. P. Chen)
@@ -106,8 +106,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                 Mining frequent itemsets over distributed data streams by continuously maintaining a global synopsis ，DATA MINING AND KNOWLEDGE DISCOVERY ,SCI
                 王恩慈(En Tzu Wang)，陳良弼(Arbee L. P. Chen)
@@ -115,8 +115,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                 Effects of typographic variables on eye-movement measures in reading Chinese from a screen ，BEHAVIOUR & INFORMATION TECHNOLOGY ,SCI
                 顏乃欣(Nai-Shing Yen)，蔡介立(Jie-Li Tsai)，Pei-Ling Chen(Pei-Ling Chen)，Hsuan-Yu Lin(Hsuan-Yu Lin)，陳良弼(Arbee L.P. Chen)
@@ -124,8 +124,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                 Efficient and Robust Schemes for Sensor Data Aggregation Based on Linear Counting ，IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS ,SCI
                 范耀中(Yao-Chung Fan)，陳良弼(Arbee L.P. Chen)
@@ -133,8 +133,8 @@ include('fun.inc.nav.php');
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                 Identifying Prototypical Melodies by Extracting Approximate Repeating Patterns from Music Works ，JOURNAL OF INFORMATION SCIENCE AND ENGINEERING ,SCI
                 劉寧漢(Ning-Han Liu)，吳宜鴻(Yi-Hung Wu)，陳良弼(Arbee L.P. Chen)

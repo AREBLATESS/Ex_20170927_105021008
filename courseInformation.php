@@ -30,43 +30,43 @@ include('fun.inc.nav.php');
 </head>
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 <?php nav(1) ?>
-    <div align="center">
+    <div align="center"  style="margin: 100px 200px auto 200px">
         <h class="title">
             Arbee 的 授課課程
         </h>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     (研究所博士班 )論文研討【第106學年第1學期：A班】
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     (大學日間部 )資訊與科技【第105學年第2學期：B班】
                     教育同學正確的資訊使用概念，並且教授資訊科技基本原理以及與日常生活相關的應用
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     (研究所碩士班 )資料庫系統【第105學年第1學期：A班】
                     以資料庫系統的實作範例幫助學生理解課程之基礎理論
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper2">
+        <div class="paper2">
+            <h class="paper">
                 <pr>
                     (研究所博士班 )論文研討【第104學年第2學期：A班】
                     探討資工領域方面的研究技巧
                 </pr>
             </h>
         </div>
-        <div>
-            <h class="paper1">
+        <div class="paper1">
+            <h class="paper">
                 <pr>
                     (研究所博士班 )資料探勘【第104學年第1學期：A班】
                     使學生瞭解資料探勘之概念與理論

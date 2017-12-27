@@ -30,12 +30,12 @@ include('fun.inc.nav.php');
 </head>
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 <?php nav(1) ?>
-        <div align="center">
+        <div align="center" style="margin: 100px 200px auto 200px">
             <h class="title">
                 Arbee 的 研討會論文
             </h>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         A Data-driven Framework on Mining Relationships between Air Quality and Cancer Diseases
                         International Conference on Data Science, Technology and Applications
@@ -45,8 +45,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         Finding the Shortest Path with User Requirements
                         International Conference on Data Mining, Communications and Information Technology
@@ -55,8 +55,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         Mining User Trajectories from Smartphone Data Considering Data Uncertainty
                         International Conference on Big Data Analytics and Knowledge Discovery - DaWaK 2016
@@ -66,8 +66,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         Mining Event Sequences from Social Media for Election Prediction
                         Industrial Conference on Data Mining
@@ -76,8 +76,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         "A framework for enabling user preference profiling through Wi-Fi logs"
                         IEEE International Conference on Data Engineering
@@ -87,8 +87,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "Determining Top-K Candidates by Reverse Constrained Skyline Queries"
                         International Conference on Data Management Technologies and Applications
@@ -97,8 +97,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         "Finding Maximal Quasi-cliques Containing a Target Vertex in a Graph"
                         International Conference on Data Management Technologies and Applications，2015
@@ -107,8 +107,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "Finding Targets with the Nearest Favor Neighbor and Farthest Disfavor Neighbor by a Skyline Query"
                         ACM Symposium on Applied Computing
@@ -117,8 +117,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         "On the Semantic Annotation of Daily Places: A Machine-Learning Approach"
                         ACM International Conference on Information and Knowledge Management，2014
@@ -127,8 +127,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "On Continuous Spatial Skyline Queriesover a Line Segment"
                         International Conference on Database and Expert Systems Applications，2014
@@ -136,8 +136,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         “Anonymization for Multiple Released Social Network Graphs"
                         Pacific-Asia Conference on Knowledge Discovery and Data Mining
@@ -147,8 +147,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "Verification of k-Coverage on Query Line Segments"
                         International Database Engineering & Applications Symposium，2013
@@ -156,8 +156,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         "Efficient Time Series Disaggregation for Non-intrusive Appliance Load Monitoring"
                         IEEE International Conference on Ubiquitous Intelligence and Computing，2012
@@ -166,8 +166,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "On Continuous Top-k Similarity Joins''
                         International Conference on Data Technologies and Applications，2012
@@ -175,8 +175,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         "Discovering leaders from social network by action cascade"
                         EuroSys Workshop on Social Network Systems，2012
@@ -185,8 +185,8 @@ include('fun.inc.nav.php');
                 </h>
             </div>
 
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "Finding Leaders with Maximum Spread of Influence through Social Networks"
                         International Computer Symposium，2012
@@ -194,8 +194,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         Dynamic Skylines Considering Range Queries
                         International Conference on Database Systems for Advanced Applications，2011
@@ -203,8 +203,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper2">
+            <div class="paper2">
+                <h class="paper">
                     <pr>
                         "A Better Strategy of Discovering Link-Pattern Based Communities by Classical Clustering Methods"
                         Pacific-Asia Conference on Knowledge Discovery and Data Mining，2010
@@ -212,8 +212,8 @@ include('fun.inc.nav.php');
                     </pr>
                 </h>
             </div>
-            <div>
-                <h class="paper1">
+            <div class="paper1">
+                <h class="paper">
                     <pr>
                         "Continuous Probabilistic Skyline Queries over Uncertain Data Streams"
                         International Conference on Database and Expert Systems Applications，2010
