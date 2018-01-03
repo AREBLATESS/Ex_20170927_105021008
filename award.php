@@ -106,5 +106,5 @@ include('fun.inc.nav.php');
         </div>
     </div>
 </body>
-<footer class="footer">亞洲大學 powered by AREBALTESS</footer>
+<footer id="footer">亞洲大學 powered by AREBALTESS</footer>
 </html>

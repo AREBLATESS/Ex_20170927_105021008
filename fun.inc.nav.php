@@ -1,11 +1,10 @@
-<?php
+<?php   session_start();
 /**
  * Created by PhpStorm.
  * User: USER
  * Date: 2017/11/29
  * Time: 上午 10:44
  */
-
 function nav($flag)
 {
 
@@ -42,6 +41,7 @@ function nav($flag)
             if (isset($_SESSION["username"])&&$_SESSION['userType']=="1") {
                 ?>
                 <form class="form-inline my-2 my-lg-0">
+                    <li style="color: white"><?php echo "welcome".$_SESSION['username']  ; ?></li>
                     <li><a href="admin.php"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;主控台</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </form>

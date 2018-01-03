@@ -6,6 +6,7 @@
  * Time: 上午 08:36
  */
 include ('fun.inc.nav.php');
+$id=$_GET['id'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -34,7 +35,7 @@ include ('fun.inc.nav.php');
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 
 <?php
-if(isset($_SESSION['username'])){
+if(isset($_SESSION['id'])){
     $query = "SELECT * FROM `user`WHERE `account`=$id";
     if($result = $mysqli->query($query)){
         $row = mysqli_fetch_row($result);
@@ -55,7 +56,7 @@ if(isset($_SESSION['username'])){
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Name</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" value="" name="username">
+                        <input class="form-control" type="text" value="" name="id">
                     </div>
                 </div>
                 <!--    <div class="form-group row">-->

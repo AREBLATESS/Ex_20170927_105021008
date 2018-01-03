@@ -6,6 +6,7 @@
  * Time: 上午 08:01
  */
 include ('fun.inc.nav.php');
+include ('dbConn.inc.php');
 ?>
 
 <!DOCTYPE html>
@@ -35,25 +36,25 @@ include ('fun.inc.nav.php');
 
 
 <?php
-//連接資料庫
-//資料庫設定
-//資料庫位置
-$db_server="localhost";
-//資料庫名稱
-$db_name="105021008";
-//資料庫管理者帳號
-$db_user="105021008";
-//資料庫管理者密碼
-$db_password ="#9ZQ6IR9e";
-//對資料庫連線
-$mysqli = new mysqli($db_server,$db_user,$db_password,$db_name);
-
-if($mysqli->connect_errno){
-    echo"Connect failed:" . $mysqli->connect_error."<br/>";
-    exit();
-}
+////連接資料庫
+////資料庫設定
+////資料庫位置
+//$db_server="localhost";
+////資料庫名稱
+//$db_name="105021008";
+////資料庫管理者帳號
+//$db_user="105021008";
+////資料庫管理者密碼
+//$db_password ="#9ZQ6IR9e";
+////對資料庫連線
+//$mysqli = new mysqli($db_server,$db_user,$db_password,$db_name);
+//
+//if($mysqli->connect_errno){
+//    echo"Connect failed:" . $mysqli->connect_error."<br/>";
+//    exit();
+//}
 //該修改處
-$sql = 'SELECT 	ID,author,title,publisher,pages,userType FROM `paper`';
+$sql = 'SELECT ID,author,title,publisher,pages,userType FROM `paper`';
 $result = $mysqli->query($sql);
 
 if(mysqli_connect_errno()){
@@ -64,7 +65,7 @@ $count = $result->num_rows;
 //
 if(isset($_SESSION['username'])){
     ?>
-    <body>
+        <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 <!--    <div style="margin:50px auto auto auto" align="center" >-->
         <div id="content" align="center">
 <!--            navbar-->
@@ -78,9 +79,9 @@ if(isset($_SESSION['username'])){
                     <th>No.</th>
                     <th>ID</th>
                     <th>author</th>
-                    <th>	title</th>
-                    <th>publisher	</th>
-                    <th>	memo</th>
+                    <th>title</th>
+                    <th>publisher</th>
+                    <th>memo</th>
                 </tr>
                 <?php
                 $i=1;
@@ -105,7 +106,7 @@ if(isset($_SESSION['username'])){
                             <td><?php echo $user['ID'];?></td>
                             <td><?php echo $user['author'];?></td>
                             <td><?php echo $user['title'];?></td>
-                            <td><?php echo $user['publisher	'];?></td>
+                            <td><?php echo $user['publisher'];?></td>
                             <td>
 <!--                                <a class="btn btn-large btn-warning" herf="updateFrame.php?id=--><?php //echo $user['id'];?><!--">UPDATE</a>-->
                                 <a class="btn btn-large btn-warning" href="paperupdateFrame.php?id=<?php echo $user['id'];?>">UPDATE</a>

@@ -8,6 +8,7 @@
 session_start();
 session_unset();
 session_destroy();
-header('Location: index2.php');
-//echo '<meta http-equiv=REFRESH CONTENT=1,url=index.php>';
-exit;
+//header('Location: index2.php');
+echo "Redirect";
+echo '<meta http-equiv=REFRESH CONTENT=2,url=index2.php>';
+//exit;

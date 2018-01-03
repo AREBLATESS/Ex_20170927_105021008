@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 /**
  * Created by PhpStorm.
  * User: user
@@ -18,5 +18,5 @@ if(isset($_SESSION['username'])){
     }
 }else{
     echo "You don't have permission to access this site.";
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=index2.php>';
 }
