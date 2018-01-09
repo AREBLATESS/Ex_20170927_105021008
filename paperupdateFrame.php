@@ -6,7 +6,7 @@
  * Time: 上午 08:36
  */
 include ('fun.inc.nav.php');
-$id=$_GET['id'];
+$number=$_GET['number'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,8 +35,8 @@ $id=$_GET['id'];
 <body style="background-size:100%;background-attachment:fixed;background-image: linear-gradient(to right,rgba(255,255,255,0.8),rgba(255,255,255,0.5)),url(image/background.png);">
 
 <?php
-if(isset($_SESSION['id'])){
-    $query = "SELECT * FROM `user`WHERE `account`=$id";
+if(isset($_SESSION['username'])){
+    $query = "SELECT * FROM `paper`WHERE `number`=$number";
     if($result = $mysqli->query($query)){
         $row = mysqli_fetch_row($result);
         $count = $result ->num_rows;
@@ -48,13 +48,13 @@ if(isset($_SESSION['id'])){
                 <h1 >使用者清單(<?php echo $count;?>)</h1>
 
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Account</label>
+                    <label for="example-text-input" class="col-2 col-form-label">number</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" value="" name="account">
+                        <input class="form-control" type="text" value="" name="number">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Name</label>
+                    <label for="example-text-input" class="col-2 col-form-label">ID</label>
                     <div class="col-10">
                         <input class="form-control" type="text" value="" name="id">
                     </div>
@@ -66,16 +66,28 @@ if(isset($_SESSION['id'])){
                 <!--        </div>-->
                 <!--    </div>-->
                 <div class="form-group row">
-                    <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                    <label for="example-email-input" class="col-2 col-form-label">author</label>
                     <div class="col-10">
-                        <input class="form-control" type="email" value="" name="email">
+                        <input class="form-control" type="text" value="" name="author">
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="example-tel-input" class="col-2 col-form-label">phone</label>
+                    <label for="example-tel-input" class="col-2 col-form-label">title</label>
                     <div class="col-10">
-                        <input class="form-control" type="tel" value="" name="tel">
+                        <input class="form-control" type="text" value="" name="title">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-tel-input" class="col-2 col-form-label">publisher</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="" name="publisher">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-tel-input" class="col-2 col-form-label">pages</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="" name="pages">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -86,26 +98,26 @@ if(isset($_SESSION['id'])){
             </div>
 
             <!--        /////////////////////////////////////radios////////////////////-->
-            <div align="center">
-                <div class="form-check" >
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" name="exampleRadios1" value="1" disabled>
-                        Operator
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" name="exampleRadios2" value="2" >
-                        Teacher
-                    </label>
-                </div>
-                <div class="form-check disabled">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" name="ampleRadios3" value="3" checked>
-                        Student
-                    </label>
-                </div>
-            </div>
+<!--            <div align="center">-->
+<!--                <div class="form-check" >-->
+<!--                    <label class="form-check-label">-->
+<!--                        <input class="form-check-input" type="radio" name="exampleRadios" name="exampleRadios1" value="1" disabled>-->
+<!--                        Operator-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--                <div class="form-check">-->
+<!--                    <label class="form-check-label">-->
+<!--                        <input class="form-check-input" type="radio" name="exampleRadios" name="exampleRadios2" value="2" >-->
+<!--                        Teacher-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--                <div class="form-check disabled">-->
+<!--                    <label class="form-check-label">-->
+<!--                        <input class="form-check-input" type="radio" name="exampleRadios" name="ampleRadios3" value="3" checked>-->
+<!--                        Student-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--            </div>-->
         </form>
         <?php
     }

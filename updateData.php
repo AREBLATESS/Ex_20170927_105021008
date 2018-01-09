@@ -21,7 +21,7 @@ $title = $_POST['title'];
 $publisher = $_POST['punlisher'];
 $pages = $_POST['pages'];
 
-if(isset($_SESSION['id'])) {
+if(isset($_SESSION['username'])) {
     if ($ID!= null && $author != null && $title != null && $publisher != null && $pages != null) {
         $query = "UPDATE paper SET `id` ='$ID',`author`=$author,`title`='$title',`publisher`=$publisher,`pages`=$pages WHERE`number`='$number' ";
         if ($mysqli->query($query) === TRUE) {

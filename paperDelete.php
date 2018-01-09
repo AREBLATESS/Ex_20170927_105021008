@@ -1,4 +1,6 @@
-<?php session_start();
+<?php
+session_start();
+include("dbConn.inc.php");
 /**
  * Created by PhpStorm.
  * User: user

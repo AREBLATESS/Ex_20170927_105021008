@@ -54,7 +54,7 @@ include ('dbConn.inc.php');
 //    exit();
 //}
 //該修改處
-$sql = 'SELECT ID,author,title,publisher,pages,userType FROM `paper`';
+$sql = 'SELECT * FROM `paper`';
 $result = $mysqli->query($sql);
 
 if(mysqli_connect_errno()){
@@ -109,9 +109,9 @@ if(isset($_SESSION['username'])){
                             <td><?php echo $user['publisher'];?></td>
                             <td>
 <!--                                <a class="btn btn-large btn-warning" herf="updateFrame.php?id=--><?php //echo $user['id'];?><!--">UPDATE</a>-->
-                                <a class="btn btn-large btn-warning" href="paperupdateFrame.php?id=<?php echo $user['id'];?>">UPDATE</a>
+                                <a class="btn btn-large btn-warning" href="paperupdateFrame.php?id=<?php echo $user['number'];?>">UPDATE</a>
                                 <a class="btn btn-large btn-danger" onclick="return confirm('Are you sure?')"
-                                    href="paperDelete.php?id=<?php echo $user['id']; ?>">DELETE</a>
+                                    href="paperDelete.php?id=<?php echo $user['number']; ?>">DELETE</a>
                             </td>
                         </tr>
 <?php

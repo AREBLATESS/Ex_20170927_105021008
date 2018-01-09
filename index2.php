@@ -77,7 +77,6 @@ include ('fun.inc.nav.php');
                     <p> </p>
                     <p><a class="btn btn-secondary" href="courseInformation.php" role="button">View details &raquo;</a></p>
                 </div><!--/span-->
-
             </div><!--/row-->
         </div><!--/span-->
 
