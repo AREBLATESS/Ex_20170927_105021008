@@ -47,7 +47,7 @@ include('fun.inc.nav.php');
                 </h>
 </div>
 
-<div id="accordion"  style="width: 60%;margin-top: 50px">
+<div id="accordion" align="center" style="width: 60%;margin-top: 50px">
     <h3>Number 1</h3>
     <div>
         <p>

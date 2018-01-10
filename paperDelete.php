@@ -7,9 +7,9 @@ include("dbConn.inc.php");
  * Date: 2017/12/13
  * Time: 上午 08:32
  */
-$number = $_GET['number'];
+$ID = $_GET['id'];
 if(isset($_SESSION['username'])){
-    $query = "DELETE FROM `paper` WHERE `number` = $number";
+    $query = "DELETE FROM `paper` WHERE `ID` = $ID";
     if($mysqli->query($query)){
         echo "<p style='text-align: center; color: rgb(255,0,0); margin-top:3em;'>
                 Success!!</p>";

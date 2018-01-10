@@ -14,7 +14,6 @@ include("dbConn.inc.php");
 //$email = $_POST['email'];
 //$tel = $_POST['tel'];
 //$userType = $_POST['exampleRadios'];
-$number = $_POST['number'];
 $ID = $_POST['id'];
 $author = $_POST['author'];
 $title = $_POST['title'];
