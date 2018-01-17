@@ -41,10 +41,10 @@ include('fun.inc.nav.php');
 <?php nav(1) ?>
 
 <div align="center" style="margin: 100px 200px auto 200px">
-                <h class="title">
-                    Arbee的<br>
-                    研討會論文<br>
-                </h>
+    <h class="title">
+        Arbee的<br>
+        研討會論文<br>
+    </h>
 </div>
 
 <div id="accordion" align="center" style="width: 60%;margin-top: 50px">
@@ -74,11 +74,11 @@ include('fun.inc.nav.php');
             Porto, Portugal，2016.9.4 ~ 2016.9.9
             、、陳良弼
         </p>
-<!--        <ul>-->
-<!--            <li>List item one</li>-->
-<!--            <li>List item two</li>-->
-<!--            <li>List item three</li>-->
-<!--        </ul>-->
+        <!--        <ul>-->
+        <!--            <li>List item one</li>-->
+        <!--            <li>List item two</li>-->
+        <!--            <li>List item three</li>-->
+        <!--        </ul>-->
     </div>
     <h3>Number 4</h3>
     <div>
@@ -217,7 +217,7 @@ include('fun.inc.nav.php');
 
 
 
-    <!--        <div align="center" style="margin: 100px 200px auto 200px">-->
+<!--        <div align="center" style="margin: 100px 200px auto 200px">-->
 <!--            <h class="title">-->
 <!--                Arbee 的 研討會論文-->
 <!--            </h>-->
