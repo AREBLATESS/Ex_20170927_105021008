@@ -14,18 +14,18 @@ include("dbConn.inc.php");
 //$email = $_POST['email'];
 //$tel = $_POST['tel'];
 //$userType = $_POST['exampleRadios'];
-$number = $_POST['number'];
-$ID = $_POST['id'];
+$ID = $_POST['ID'];
 $author = $_POST['author'];
 $title = $_POST['title'];
-$publisher = $_POST['punlisher'];
+$publisher = $_POST['publisher'];
 $pages = $_POST['pages'];
 
 if(isset($_SESSION['username'])) {
     if ($ID!= null && $author != null && $title != null && $publisher != null && $pages != null) {
-        $query = "UPDATE paper SET `id` ='$ID',`author`=$author,`title`='$title',`publisher`=$publisher,`pages`=$pages WHERE`number`='$number' ";
+        $query = "UPDATE paper SET `ID` ='$ID',`author`=$author,`title`='$title',`publisher`=$publisher,`pages`=$pages WHERE`ID`='$ID' ";
         if ($mysqli->query($query) === TRUE) {
             echo '修改成功!';
+//            echo $query;
             echo '<meta http-equiv=REFRESH CONTENT=2;url=admin.php>';
         } else {
             echo '修改錯誤';

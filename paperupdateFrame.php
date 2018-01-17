@@ -5,8 +5,9 @@
  * Date: 2018/1/3
  * Time: 上午 08:36
  */
+include ('dbConn.inc.php');
 include ('fun.inc.nav.php');
-$number=$_GET['number'];
+$ID=$_GET['ID'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,9 +18,14 @@ $number=$_GET['number'];
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+<!--          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"-->
+<!--          crossorigin="anonymous">-->
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
@@ -36,27 +42,22 @@ $number=$_GET['number'];
 
 <?php
 if(isset($_SESSION['username'])){
-    $query = "SELECT * FROM `paper`WHERE `number`=$number";
+    $query = "SELECT * FROM `paper`WHERE `ID`=$ID";
     if($result = $mysqli->query($query)){
         $row = mysqli_fetch_row($result);
         $count = $result ->num_rows;
 
         ?>
-        <?php navbar(); ?>
+        <?php nav(1); ?>
         <form method="post" action="updateData.php">
             <div style="width:60%;margin:50px auto auto auto" align="center">
                 <h1 >使用者清單(<?php echo $count;?>)</h1>
 
+
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">number</label>
+                    <label for="example-text-input" class="col-2 col-form-label"></label>
                     <div class="col-10">
-                        <input class="form-control" type="text" value="" name="number">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">ID</label>
-                    <div class="col-10">
-                        <input class="form-control" type="text" value="" name="id">
+                        <input  class="form-control" type="hidden" value='<?php echo $ID ?>' name="ID">
                     </div>
                 </div>
                 <!--    <div class="form-group row">-->
@@ -122,7 +123,7 @@ if(isset($_SESSION['username'])){
         <?php
     }
     else{
-//        echo "No such user found." . mysqli_error($mysqli);
+        echo "No such user found." . mysqli_error($mysqli。);
     }
 }else{
     echo "You don't have permission to access this site.";

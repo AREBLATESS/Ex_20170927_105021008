@@ -70,12 +70,12 @@ include ('fun.inc.nav.php');
                 <div class="col-6 col-lg-4">
                     <h2>Arbee專區</h2>
                     <p> </p>
-                    <p><a class="btn btn-secondary" href="conferencePaper.php" role="button">View details &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="sample.php" role="button">View details &raquo;</a></p>
                 </div><!--/span-->
                 <div class="col-6 col-lg-4">
                     <h2>Arbee授課</h2>
                     <p> </p>
-                    <p><a class="btn btn-secondary" href="courseInformation.php" role="button">View details &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="sample4.php" role="button">View details &raquo;</a></p>
                 </div><!--/span-->
             </div><!--/row-->
         </div><!--/span-->

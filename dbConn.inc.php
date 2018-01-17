@@ -5,7 +5,8 @@
  * Date: 2018/1/3
  * Time: 上午 09:01
  */
-
+////資料庫連線採UTF8
+//mysqli_query("SET NAMES UTF8");
 
 //連接資料庫
 
@@ -24,6 +25,8 @@ $db_password ="#9ZQ6IR9e";
 
 //資料庫連線採UTF8
 //mysqli_query("SET NAMES UTF8");
+$connect = @mysqli_connect($db_server, $db_user, $db_password,$db_name);
+mysqli_set_charset($connect,'utf8');
 
 $mysqli = new mysqli($db_server,$db_user,$db_password,$db_name);
 
