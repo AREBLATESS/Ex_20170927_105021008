@@ -6,7 +6,6 @@
  * Time: 上午 01:05
  */
 include('fun.inc.nav.php');
-$id=$_GET['id'];
 
 ?>
 <!doctype html>

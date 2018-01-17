@@ -7,7 +7,11 @@ include("dbConn.inc.php");
  * Date: 2017/12/13
  * Time: 上午 08:32
  */
+<<<<<<< HEAD
 $ID = $_GET['ID'];
+=======
+$ID = $_GET['id'];
+>>>>>>> 4d4c31f8987844e6c7cf82cb26d05b32420a109d
 if(isset($_SESSION['username'])){
     $query = "DELETE FROM `paper` WHERE `ID` = $ID";
     if($mysqli->query($query)){

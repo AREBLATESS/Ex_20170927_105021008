@@ -109,9 +109,15 @@ if(isset($_SESSION['username'])){
                             <td><?php echo $user['publisher'];?></td>
                             <td>
 <!--                                <a class="btn btn-large btn-warning" herf="updateFrame.php?id=--><?php //echo $user['id'];?><!--">UPDATE</a>-->
+<<<<<<< HEAD
                                 <a class="btn btn-large btn-warning" href="paperupdateFrame.php?ID=<?php echo $user['ID'];?>">UPDATE</a>
                                 <a class="btn btn-large btn-danger" onclick="return confirm('Are you sure?')"
                                     href="paperDelete.php?ID=<?php echo $user['ID']; ?>">DELETE</a>
+=======
+                                <a class="btn btn-large btn-warning" href="paperupdateFrame.php?id=<?php echo $user['ID'];?>">UPDATE</a>
+                                <a class="btn btn-large btn-danger" onclick="return confirm('Are you sure?')"
+                                    href="paperDelete.php?id=<?php echo $user['ID']; ?>">DELETE</a>
+>>>>>>> 4d4c31f8987844e6c7cf82cb26d05b32420a109d
                             </td>
                         </tr>
 <?php
